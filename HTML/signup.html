@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodPoint - Sign Up</title>
+    <link rel="stylesheet" href="../CSS/signup.css">
+    <script src="../JS/signup.js" defer></script>
+</head>
+<body>
+    
+
+    <header class="header">
+
+    <a href="home.html" class="logo">
+        <img src="../Images/Logo.png" alt="FoodPoint Logo" class="logo-icon">
+        Food<span class="logo-orange">Point</span>
+    </a>
+
+    <nav class="navigation">
+
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="signup.html" class="login-button active-button">Sign Up</a>
+        <a href="login.html" class="login-button">Login</a>
+        
+    </nav>
+
+    </header>
+
+    <main class="main-container">
+        <section class="welcome-section">
+            <p class="small-title">WELCOME TO FOODPOINT</p>
+            <h1>Delicious Food
+                <span>Delivered To You</span>
+            </h1>
+
+            <p class="description">Enjoy Fresh Ingredients, Delicious Meals And Fast Delivery Directly To Your Door</p>
+    
+
+    <section class="slider">
+        <article class="slide active">
+            <img src="../Images/Burger.jpg" alt="Delicious Hamburger" class="food-image">
+            <h3>Delicious</h3>
+            <p>Fresh and tasty burgers for everyone</p>
+        </article>
+
+        <article class="slide">
+            <img src="../Images/Pizza.jpg" alt="Italian Pizza" class="food-image">
+            <h3>Italian Pizza</h3>
+            <p>Enjoy our freshly baked Italian Pizza</p>
+        </article>
+
+        <article class="slide">
+            <img src="../Images/Sandwich.jpg" alt="Fresh Sandwich" class="food-image">
+            <h3>Fresh Sandwich</h3>
+            <p>Healthy and fresh meals every day</p>
+        </article>
+
+        <article class="slide">
+            <img src="../Images/Tacos.jpg" alt="Mexican Tacos" class="food-image">
+            <h3>Incredible Tacos</h3>
+            <p>Fresh and Delicious Tacos made with quality ingredients and full flavor</p>
+        </article>
+
+        <article class="slide">
+            <img src="../Images/Fried Chicken.jpg" alt="Awesome Chicken" class="food-image">
+            <h3>Awesome Chicken</h3>
+            <p>Juicy and Delicious chicken, freshly prepared with rich flavours</p>
+        </article>
+
+    <button type="button" class="previous">←</button>
+    <button type="button" class="next">→</button>
+
+    <div class="dots">
+        <button type="button" class="dot active" aria-label="Go to slide 1"></button>
+        <button type="button" class="dot" aria-label="Go to slide 2"></button>
+        <button type="button" class="dot" aria-label="Go to slide 3"></button>
+        <button type="button" class="dot" aria-label="Go to slide 4"></button>
+        <button type="button" class="dot" aria-label="Go to slide 5"></button>
+    </div>
+
+    </section>
+
+    <aside class="welcome-aside">
+            <h3>Why Choose FoodPoint?</h3>
+            <p>Enjoy fresh ingredients, delicious meals and fast delivery directly to your door</p>
+
+            <ul>
+                <li>Fresh Ingredients</li>
+                <li>Fast Delivery</li>
+                <li>Delicious Meals</li>
+                <li>Easy Ordering</li>
+            </ul>
+        </aside>
+
+        <p class="welcome-text">Fresh Ingredients | Fast Delivery | Great Taste</p>
+    
+    </section>
+
+    <section class="signup-section">
+        <div class="form-title">
+            <p class="small-title">JOIN OUR COMMUNITY</p>
+            <h2>Create Account</h2>
+            <p>Create your account and enjoy your favorite food!</p>
+        </div>
+
+        <form id="signupForm" method="">
+        <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            <small id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <small id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+383 4* *** ***" required>
+            <small id="phoneError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                <button type="button" class="show-password" data-input="password" aria-label="Show Password">Show</button>
+            </div>
+            <small id="passwordError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <div class="password-container">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                <button type="button" class="show-password" data-input="confirmPassword" aria-label="Show confirm password">Show</button>
+            </div>
+            <small id="confirmError"></small>
+        </div>
+
+        <div class="form-group terms-group">
+            <label>
+                <input type="checkbox" id="terms" required> I agree to the Terms and Conditions
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="food">Favorite Food</label>
+            <select name="food" id="food" required>
+                <option value="">Choose your favorite food</option>
+                <option value="burger">Burger</option>
+                <option value="pizza">Pizza</option>
+                <option value="Sandwich">Sandwich</option>
+                <option value="Tacos">Tacos</option>
+                <option value="Fried Chicken">Fried Chicken</option>
+            </select>
+            <small id="foodError"></small>
+        </div>
+
+        <fieldset class="radio-group">
+            <legend>Order Preferences</legend>
+            <label><input class="radio-button" type="radio" name="delivery" value="Delivery" checked>Delivery</label>
+            <label><input class="radio-button" type="radio" name="delivery" value="Pick Up">Pick Up</label>
+        </fieldset>
+
+        <button type="submit" class="signup-button">Create Account</button>
+        <p id="successMessage"></p>
+        <p class="login-text">Already have an account? <a href="login.html">Login here</a> </p>
+        </form>
+    </section>
+</main>
+
+
+    <footer class="footer">
+        <p>2026 FoodPoint. All Rights Reserved.</p>
+        <p>Fresh Ingredients. Fast Delivery. Great Taste</p>
+    </footer>
+
+</body>
+</html>
