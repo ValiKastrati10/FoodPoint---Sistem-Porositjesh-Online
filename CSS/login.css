@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255,248,242);
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255,121,0);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo-icon{
+    width: 80px;
+    height: 50px;
+    display: block;
+}
+
+.logo-orange{
+    color: rgb(255, 121, 0);
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: rgb(34,34,34);
+    font-weight: bold;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.navigation a:hover,
+.navigation .active-link{
+    color: rgb(255,121,0);
+}
+
+.login-button{
+    background-color: rgb(255, 121, 0);
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.login-button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255,121,0);
+}
+
+.navigation a.active-button{
+    background-color: rgb(255,121,0);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 2px solid rgb(255,121,0);
+}
+
+.login-container{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    min-height: 780px;
+}
+
+.welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    background-color: rgb(255, 121, 0);
+    border-radius: 12px;
+    padding: 50px 35px;
+    color: rgb(255, 255, 255);
+}
+
+.welcome-text{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.welcome-section h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.welcome-section h1 span{
+    display: block;
+    color: rgb(34, 34, 34);
+}
+
+.description{
+    line-height: 2.5;
+    margin-bottom: 30px;
+}
+
+.food-box{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(34, 34, 34);
+}
+
+.food-box-icon{
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-box h2{
+    color: rgb(255, 121, 0);
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.food-box p{
+    font-size: 15px;
+}
+
+.form-section{
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(238,238,238);
+    border-radius: 15px;
+    padding: 45px 40px;
+}
+
+.orange-text{
+    color: rgb(255,121,0);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.form-section h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    color: rgb(119,119,119);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-input{
+    width: 100%;
+    padding: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(221,221,221);
+    border-radius: 6px;
+    background-color: rgb(255,250,246);
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.form-input:focus{
+    outline: 1px solid rgb(255, 121, 0);
+}
+
+.remember{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.remember-label{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+}
+
+.remember-input{
+    accent-color: rgb(255,121,0);
+}
+
+.button-login{
+    background-color: rgb(255, 121, 0);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-login:hover{
+    background-color: rgb(229, 104, 0);
+}
+
+.register-text{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    color: rgb(119,119,119);
+}
+
+.register-text a{
+    color: rgb(255, 121, 0);
+    text-decoration: none;
+}
+
+.footer{
+    background-color: rgb(34,34,34);
+    color: rgb(255, 255, 255);
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1024px){
+    .header{
+        padding: 15px 4%;
+    }
+
+    .navigation{
+        gap: 15px;
+    }
+
+    .login-container{
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .welcome-section{
+        padding: 35px 25px;
+    }
+
+    .welcome-section h1{
+        font-size: 32px;
+    }
+
+    .form-section{
+        padding: 35px 25px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navigation{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .login-container{
+        width: 100%;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .welcome-section,
+    .form-section{
+        width: 100%;
+    }
+
+    .welcome-section h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header{
+        padding: 15px 10px;
+    }
+
+    .navigation{
+        gap: 10px;
+    }
+
+    .navigation a{
+        font-size: 12px;
+    }
+
+    .login-container{
+        padding: 12px;
+        gap: 15px;
+    }
+
+    .welcome-section{
+        padding: 25px 18px;
+    }
+
+    .welcome-section h1{
+        font-size: 26px;
+    }
+
+    .description{
+        line-height: 1.8;
+    }
+
+    .form-section{
+        padding: 25px 18px;
+    }
+
+    .form-section h2{
+        font-size: 24px;
+    }
+
+    .food-box-icon{
+        width: 100%;
+        max-width: 220px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .logo{
+        font-size: 20px;
+    }
+
+    .logo-icon{
+        width: 55px;
+        height: 40px;
+    }
+
+    .navigation{
+        gap: 8px;
+    }
+
+    .navigation a{
+        font-size: 11px;
+    }
+
+    .login-button{
+        padding: 7px 10px;
+    }
+
+    .welcome-section h1{
+        font-size: 23px;
+    }
+
+    .form-section{
+        padding: 20px 12px;
+    }
+
+    .form-section h2{
+        font-size: 21px;
+    }
+
+    .form-input{
+        padding: 12px;
+    }
+
+    .button-login{
+        padding: 12px;
+    }
+}
