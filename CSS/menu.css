@@ -1,78 +1,83 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 248, 242);
+    background-color: rgb(255, 248, 241);
     color: rgb(34, 34, 34);
 }
 
-/* Header edhe navbari i njejt esht */
-
-.header {
+/* Rregullimi i klasave per pjesen e navbarit dhe headerit */
+.header{
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 6%;
-    border-bottom: 2px solid rgb(255, 121, 0);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255,121,0);
 }
 
-.logo {
+.logo{
     display: flex;
     align-items: center;
+    gap: 0px;
     text-decoration: none;
     color: rgb(34, 34, 34);
     font-size: 25px;
     font-weight: bold;
 }
 
-.logo-icon {
+.logo-icon{
     width: 80px;
     height: 50px;
     display: block;
 }
 
-.logo-orange {
+.logo-orange{
     color: rgb(255, 121, 0);
 }
 
-.navigation {
+.navigation{
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-.navigation a {
+.navigation a{
     text-decoration: none;
-    color: rgb(34, 34, 34);
+    color: rgb(34,34,34);
     font-weight: bold;
     font-size: 14px;
+    background-color: transparent;
 }
 
-.navigation a:hover {
-    color: rgb(255, 121, 0);
+.navigation a:hover,
+.navigation .active-link{
+    color: rgb(255,121,0);
 }
 
-.login-button {
+.login-button{
     background-color: rgb(255, 121, 0);
-    color: rgb(255, 255, 255);
     padding: 10px 22px;
     border-radius: 6px;
+    text-decoration: none;
 }
 
-.login-button:hover {
-    background-color: rgb(229, 104, 0);
-    color: rgb(255, 255, 255);
-}
-
-.navigation a.active-button {
-    background-color: rgb(255, 121, 0);
+.navigation a.active-button{
+    background-color: rgb(255,121,0);
     color: rgb(255, 255, 255);
     border-radius: 8px;
+    border: 2px solid rgb(255,121,0);
+}
+
+.login-button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255,121,0);
 }
 
 /* Pjesa e Menus */
